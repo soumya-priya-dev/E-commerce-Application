@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="index.html">Home</a>
+  <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+
+<!-- Dropdown -->
+ <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">☰ Menu</button>
+
+    <div id="dropdownMenu" class="dropdown-content">
+  <a href="index.html">Home</a>
+  <a href="cart.html">Cart (<span id="cartCount">0</span>)</a>
+  <a href="login.html">Login</a>
+  <a href="#" onclick="logout()">🚪 Logout</a>
+  </div>
+  </div>
+   
+</nav>
+
+
+<hr>
+
+<!-- ⭐ MULTI SELECT SECTION (INSERTED HERE) -->
+<h2>🎯 Select Multiple Products</h2>
+
+<label>
+  <input type="checkbox" class="item" data-name="Phone" data-price="10000">
+  Phone - ₹10000
+</label>
+
+<br>
+
+<label>
+  <input type="checkbox" class="item" data-name="Laptop" data-price="50000">
+  Laptop - ₹50000
+</label>
+
+<br>
+<button onclick="showSelected()">Show Selected</button>
+
+<div id="result"></div>
+
+<hr>
+
+<h2>More Products</h2>
+
+<div id="productContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
+

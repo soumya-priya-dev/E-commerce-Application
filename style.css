@@ -1,0 +1,209 @@
+/* ================= BODY ================= */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: #111;
+  padding: 15px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ================= PRODUCT CARD ================= */
+ .product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* ================= ALL BUTTONS ================= */
+button {
+  padding: 6px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: green;
+}
+  
+/* ADD TO CART BUTTON */
+button:nth-of-type(1) {
+  background: #007bff;
+  color: white;
+}
+
+button:nth-of-type(1):hover {
+  background: #0056b3;
+}
+
+/* BUY NOW BUTTON */
+button:nth-of-type(2) {
+  background: #ff9800;
+  color: white;
+}
+
+button:nth-of-type(2):hover {
+  background: #e68900;
+}
+
+/* ================= PLACE ORDER BUTTON ================= */
+.place-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  width: auto;          /* FIX: removes full length */
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* ================= CART BOX ================= */
+#cartItems {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ================= LOGIN BOX ================= */
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+
+/* =========================
+   GLOBAL BUTTON STYLE
+========================= */
+button {
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* click effect for all */
+button:active {
+  transform: scale(0.97);
+}
+
+/* =========================
+   ADD TO CART BUTTON
+========================= */
+.add-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   BUY NOW BUTTON
+========================= */
+.buy-btn:hover {
+  background-color: #e68900;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   PLACE ORDER BUTTON
+========================= */
+.place-btn:hover {
+  background-color: #1e7e34;
+  transform: translateY(-3px);
+}
+.logout-btn {
+  background: #dc3545;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background: #b02a37;
+}
+
+
+/* Navbar dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button */
+.dropbtn {
+  background: #333;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Dropdown box */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links */
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.show {
+  display: block;
+}
+
