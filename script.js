@@ -139,7 +139,7 @@ fetch("https://fakestoreapi.com/products")
 
     products.forEach(product => {
 
-      let price = Math.round(product.price * 80); // 👈 ADD HERE
+      let price = Math.round(product.price * 80); // 
 
       container.innerHTML += `
         <div class="product">
@@ -186,41 +186,4 @@ function updateCartCount() {
 document.addEventListener("DOMContentLoaded", function () {
   updateCartCount();
  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  
